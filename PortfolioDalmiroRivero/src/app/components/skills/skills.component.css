@@ -1,0 +1,76 @@
+.progress {
+  padding: 0px;
+  width: 425px;
+  margin: 10px;
+}
+
+.progress-bar-animated {
+  -webkit-animation: 1s linear infinite progress-bar-stripes;
+  animation: 1s linear infinite progress-bar-stripes;
+}
+
+@media (max-width: 768px) {
+  .row {
+    padding: 0px;
+    margin: 0px;
+  }
+  .progress {
+    padding: 0px;
+    width: 300px;
+    margin-top: 5px;
+  }
+
+  #barra {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #barrados {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media (max-width: 991px) {
+  .row {
+    padding: 0px;
+    margin: 0px;
+  }
+  .progress {
+    padding: 0px;
+    width: 380px;
+    margin-top: 5px;
+  }
+
+  #barra {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #barrados {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+#barra {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#barrados {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}

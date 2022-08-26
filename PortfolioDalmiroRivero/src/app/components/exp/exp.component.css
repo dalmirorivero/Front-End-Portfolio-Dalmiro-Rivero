@@ -1,0 +1,43 @@
+.row {
+  margin-top: 25px;
+}
+
+h2,
+h3 {
+  display: inline;
+  margin: 4px;
+}
+
+h1 {
+  color: white;
+  font-size: 50px;
+  font-weight: bold;
+  font-family: "WC Mano Negra Bta";
+  text-align: center;
+}
+
+h2 {
+  color: white;
+  font-family: "Stitch";
+}
+
+h3 {
+  font-style: oblique;
+  font-weight: lighter;
+  font-size: 20px;
+  color: #cb6ce6;
+}
+
+ol {
+  margin-top: 25px;
+}
+
+li {
+  list-style-type: "💥";
+  font-size: 25px;
+}
+
+p {
+  font-style: oblique;
+  color: #ffc107;
+}

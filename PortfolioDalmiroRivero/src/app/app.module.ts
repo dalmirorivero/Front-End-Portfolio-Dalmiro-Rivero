@@ -7,6 +7,9 @@ import { HeaderComponent } from './components/header/header.component';
 import { HomeComponent } from './components/home/home.component';
 import { RedesComponent } from './components/redes/redes.component';
 import { BannerComponent } from './components/banner/banner.component';
+import { InfoComponent } from './components/info/info.component';
+import { ExpComponent } from './components/exp/exp.component';
+import { SkillsComponent } from './components/skills/skills.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +17,10 @@ import { BannerComponent } from './components/banner/banner.component';
     HeaderComponent,
     HomeComponent,
     RedesComponent,
-    BannerComponent
+    BannerComponent,
+    InfoComponent,
+    ExpComponent,
+    SkillsComponent
   ],
   imports: [
     BrowserModule,

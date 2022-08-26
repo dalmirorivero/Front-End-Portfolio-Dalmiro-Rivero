@@ -1,0 +1,53 @@
+#pf {
+  border-radius: 100%;
+  border: 10px double #cb6ce6;
+  max-width: 80%;
+}
+
+div {
+  text-align: center;
+}
+
+.row {
+  padding: 20px;
+}
+
+h1 {
+  margin-top: 10px;
+  font-family: "Stitch";
+}
+
+@font-face {
+  font-family: "Stitch";
+  src: url("../../../assets/Staatliches-Regular.ttf") format("TrueType");
+}
+
+@media (max-width: 768px) {
+  #pf {
+    width: 50%;
+    border-radius: 100%;
+  }
+}
+
+h2 {
+  margin-top: -10px;
+  font-style: oblique;
+  font-weight: lighter;
+  font-size: larger;
+}
+
+h1,
+h2 {
+  color: white;
+}
+
+p {
+  font-weight: bolder;
+  font-size: x-large;
+  font-family: "WC Mano Negra Bta", sans-serif;
+  color: #ffc107;
+}
+
+.bio {
+  margin-top: 5%;
+}
