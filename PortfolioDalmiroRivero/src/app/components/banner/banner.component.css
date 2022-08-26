@@ -1,0 +1,26 @@
+img {
+  max-width: 100%;
+  align-items: center;
+}
+
+img:hover {
+  animation: saludo 1s infinite;
+}
+
+@keyframes saludo {
+  0% {
+    -webkit-transform: rotateZ(-5deg);
+  }
+  25% {
+    -webkit-transform: rotateZ(5deg);
+  }
+  50% {
+    -webkit-transform: rotateZ(-5deg);
+  }
+  75% {
+    -webkit-transform: rotateZ(5deg);
+  }
+  100% {
+    -webkit-transform: rotateZ(-5deg);
+  }
+}

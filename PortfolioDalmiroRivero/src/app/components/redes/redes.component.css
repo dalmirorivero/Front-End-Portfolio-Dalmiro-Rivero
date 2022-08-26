@@ -1,0 +1,38 @@
+/* VERSION ESCRITORIO */
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#in,
+#gh {
+  width: 50px;
+  margin-left: 12px;
+}
+
+#ap {
+  width: 150px;
+}
+
+.btn {
+  height: 35px;
+  border-width: 2.5px;
+  font-weight: bold;
+  text-align: center;
+  line-height: 0px;
+}
+
+/* VERSION MOVIL */
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .login {
+    justify-content: space-between;
+  }
+}
