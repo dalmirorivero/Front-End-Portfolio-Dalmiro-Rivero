@@ -14,7 +14,7 @@ div {
 
 h1 {
   margin-top: 10px;
-  font-family: "Stitch";
+  font-family: "Stitch", "Staatliches";
 }
 
 @font-face {
@@ -49,5 +49,5 @@ p {
 }
 
 .bio {
-  margin-top: 5%;
+  margin-top: 10%;
 }

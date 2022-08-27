@@ -1,6 +1,7 @@
 img {
   max-width: 100%;
   align-items: center;
+  margin-top: 2%;
 }
 
 img:hover {

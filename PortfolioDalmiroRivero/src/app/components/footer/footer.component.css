@@ -1,0 +1,22 @@
+footer {
+  text-align: center;
+  border-top: 1px solid #ffc107;
+  margin-top: 25px;
+}
+
+p {
+  padding: 0px;
+  margin: 0px;
+  color: #3c3c3c;
+}
+
+a {
+  padding: 0px;
+  margin: 0px;
+  text-decoration: none;
+  color: #3c3c3c;
+}
+
+a:hover {
+  color: #ffc107;
+}

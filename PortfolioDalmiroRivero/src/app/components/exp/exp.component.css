@@ -16,9 +16,13 @@ h1 {
   text-align: center;
 }
 
+h1:hover {
+  color: #ffc107;
+}
+
 h2 {
   color: white;
-  font-family: "Stitch";
+  font-family: "Stitch", "Staatliches";
 }
 
 h3 {
