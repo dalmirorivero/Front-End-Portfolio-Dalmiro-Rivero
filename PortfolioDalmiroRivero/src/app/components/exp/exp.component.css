@@ -45,3 +45,17 @@ p {
   font-style: oblique;
   color: #ffc107;
 }
+
+@media (max-width: 768px) {
+  p {
+    text-align: center;
+  }
+  ol {
+    text-align: center;
+
+    padding: 1%;
+  }
+  li {
+    list-style-position: inside;
+  }
+}
