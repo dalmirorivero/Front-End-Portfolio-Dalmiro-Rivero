@@ -6,29 +6,38 @@
           <div class="card-body p-5 text-center">
             <h3 class="mb-5">INICIO DE SESION</h3>
 
-            <div class="form-outline mb-4">
-              <input
-                type="email"
-                id="typeEmailX-2"
-                class="form-control form-control-lg"
-              />
-              <label class="form-label" for="typeEmailX-2"
-                >NOMBRE DE USUARIO</label
-              >
-            </div>
+            <form #f="ngForm" (ngSubmit)="onLogin()" novalidate>
+              <div class="form-outline mb-4">
+                <input
+                  type="user"
+                  id="nombreUsuario"
+                  name="nombreUsuario"
+                  class="form-control form-control-lg"
+                  [(ngModel)]="nombreUsuario"
+                  name="nombreUsuario"
+                  required
+                />
+                <label class="form-label" for="nombreUsuario"
+                  >NOMBRE DE USUARIO</label
+                >
+              </div>
 
-            <div class="form-outline mb-4">
-              <input
-                type="password"
-                id="typePasswordX-2"
-                class="form-control form-control-lg"
-              />
-              <label class="form-label" for="typePasswordX-2">CONTRASEÑA</label>
-            </div>
+              <div class="form-outline mb-4">
+                <input
+                  type="password"
+                  id="password"
+                  class="form-control form-control-lg"
+                  [(ngModel)]="password"
+                  name="password"
+                  required
+                />
+                <label class="form-label" for="password">CONTRASEÑA</label>
+              </div>
 
-            <!-- Checkbox -->
-            <hr class="my-4" />
-            <button class="btn btn-warning" type="submit">INGRESAR</button>
+              <!-- Checkbox -->
+              <hr class="my-4" />
+              <button class="btn btn-warning" type="submit">INGRESAR</button>
+            </form>
           </div>
         </div>
       </div>

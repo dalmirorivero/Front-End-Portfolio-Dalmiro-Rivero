@@ -9,8 +9,11 @@
       </a>
     </div>
     <div class="login">
-      <button type="button" class="btn btn-outline-warning" (click)="login()">
+      <button type="button" class="btn btn-outline-warning" (click)="login()" *ngIf="!isLogged">
         Iniciar sesion
+      </button>
+      <button type="button" class="btn btn-outline-warning" (click)="onLogOut()" *ngIf="isLogged">
+        Cerrar sesion
       </button>
       <img src="../../../assets/AP.png" alt="argentina programa" id="ap" />
     </div>
