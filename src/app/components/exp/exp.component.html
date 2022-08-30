@@ -3,18 +3,42 @@
 
   <div class="col-xs-12 col sm-12 col-md-5 col-lg-5">
     <h1>EXPERIENCIA</h1>
-    <ol>
-      <li>
-        <h2>GDSnet.</h2>
-        <h3>(2017 - 2020)</h3>
-      </li>
-      <p>Consultora de mercado - Operador de campo en auditoria externa.</p>
-      <li>
-        <h2>Mas Natural</h2>
-        <h3>(2020 - Act.)</h3>
-      </li>
-      <p>Productos de limpieza biodegradables - Gestor de logistica y redes.</p>
-    </ol>
+    <button
+      type="button"
+      class="btn btn-outline-warning"
+      routerLink="/nuevaexp"
+      *ngIf="isLogged"
+    >
+      Nueva Experiencia
+    </button>
+    <table class="table">
+      <tbody>
+        <tr *ngFor="let Experiencia of expe">
+          <td>
+            <h2>{{ Experiencia.nombreE }}</h2>
+          </td>
+          <td>
+            <p>{{ Experiencia.descripcionE }}</p>
+          </td>
+          <td *ngIf="isLogged">
+            <button
+              class="btn btn-outline-warning"
+              routerLink="/editexp/{{ Experiencia.id }}"
+            >
+              <i class="bi bi-pen"></i> EDITAR
+            </button>
+          </td>
+          <td *ngIf="isLogged">
+            <button
+              class="btn btn-outline-danger"
+              (click)="delete(Experiencia.id)"
+            >
+              <i class="bi bi-trash3"></i> BORRAR
+            </button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
   </div>
 
   <div class="col-xs-12 col sm-12 col-md-5 col-lg-5">
