@@ -23,11 +23,11 @@ export class NewExperienciaComponent implements OnInit {
     const expe = new Experiencia(this.nombreE, this.descripcionE);
     this.sExperiencia.save(expe).subscribe(
       (data) => {
-        alert('Experiencia aniadida');
+        alert('Experiencia añadida');
         this.router.navigate(['']);
       },
       (err) => {
-        alert('Fallo');
+        alert('Falló');
         this.router.navigate(['']);
       }
     );
