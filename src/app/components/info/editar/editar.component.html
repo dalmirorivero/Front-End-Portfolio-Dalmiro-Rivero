@@ -1,0 +1,25 @@
+<div class="container" *ngIf="perfil">
+    <div class="row">
+        <div>
+            <form (ngSubmit)="onUpdate()" novalidate #f="ngForm">
+                <div class="form-group">
+                    <label for="perfil">Nombre de la Skill</label>
+                    <input type="text" class="form-control" id="perfil" name="perfil" [(ngModel)]="perfil.perfil"
+                        required>
+                </div>
+                <div class="form-group">
+                    <label for="descripcion">Ingrese el porcentaje</label>
+                    <input type="text" class="form-control" id="descripcion" name="descripcion"
+                        [(ngModel)]="perfil.descripcion" required>
+                </div>
+                <div class="form-group">
+                    <label for="img">Ingrese el porcentaje</label>
+                    <input type="text" class="form-control" id="img" name="img" [(ngModel)]="perfil.img" required>
+                </div>
+                <button class="btn btn-primary">
+                    Actualizar
+                </button>
+            </form>
+        </div>
+    </div>
+</div>

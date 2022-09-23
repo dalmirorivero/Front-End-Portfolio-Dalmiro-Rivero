@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { Skill } from 'src/app/model/skill';
+import { Soft } from 'src/app/model/soft';
 import { SkillService } from 'src/app/service/skill.service';
+import { SoftService } from 'src/app/service/soft.service';
 import { TokenService } from 'src/app/service/token.service';
 
 @Component({
@@ -10,12 +12,20 @@ import { TokenService } from 'src/app/service/token.service';
 })
 export class SkillsComponent implements OnInit {
   skill: Skill[] = [];
+  soft: Soft[] = [];
 
-  constructor(private skillS: SkillService, private tokenService: TokenService) { }
+  constructor(private skillS: SkillService, private softS: SoftService ,private tokenService: TokenService) { }
   isLogged = false;
 
   ngOnInit(): void {
     this.cargarSkills();
+    if(this.tokenService.getToken()){
+      this.isLogged = true;
+    } else {
+      this.isLogged = false;
+    }
+
+    this.cargarSoft();
     if(this.tokenService.getToken()){
       this.isLogged = true;
     } else {
@@ -31,6 +41,14 @@ export class SkillsComponent implements OnInit {
     )
   }
 
+  cargarSoft(): void{
+    this.softS.lista().subscribe(
+      data => {
+        this.soft = data;
+      }
+    )
+  }
+
   delete(id: number){
     if(id != undefined){
       this.skillS.delete(id).subscribe(
@@ -42,6 +60,19 @@ export class SkillsComponent implements OnInit {
       )
     }
   
+  }
+
+  eliminar(id?: number) {
+    if (id != undefined) {
+      this.softS.delete(id).subscribe(
+        (data) => {
+          this.cargarSoft();
+        },
+        (err) => {
+          alert('No se puedo realizar la accion');
+        }
+      );
+    }
   }
 
 }

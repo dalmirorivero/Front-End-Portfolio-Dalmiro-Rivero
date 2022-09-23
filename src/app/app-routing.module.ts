@@ -6,9 +6,12 @@ import { NewEducacionComponent } from './components/exp/new-educacion/new-educac
 import { NewExperienciaComponent } from './components/exp/new-experiencia/new-experiencia.component';
 import { HeaderComponent } from './components/header/header.component';
 import { HomeComponent } from './components/home/home.component';
+import { EditarComponent } from './components/info/editar/editar.component';
 import { LoginComponent } from './components/login/login.component';
-import { EditSkillComponent } from './components/skills/edit-skill.component';
-import { NewSkillComponent } from './components/skills/new-skill.component';
+import { EditSkillComponent } from './components/skills/edit-skill/edit-skill.component';
+import { EditSoftComponent } from './components/skills/edit-soft/edit-soft.component';
+import { NewSkillComponent } from './components/skills/new-skill/new-skill.component';
+import { NewSoftComponent } from './components/skills/new-soft/new-soft.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
@@ -18,7 +21,11 @@ const routes: Routes = [
   { path: 'nuevaformacion', component: NewEducacionComponent },
   { path: 'editedu/:id', component: EditEducacionComponent },
   { path: 'edithab/:id', component: EditSkillComponent},
-  { path: 'nuevahab', component: NewSkillComponent}
+  { path: 'nuevahab', component: NewSkillComponent},
+  { path: 'nuevashab', component: NewSoftComponent},
+  { path: 'editshab/:id', component: EditSoftComponent},
+  { path: 'editpr/:id', component: EditarComponent}
+
 ];
 
 @NgModule({

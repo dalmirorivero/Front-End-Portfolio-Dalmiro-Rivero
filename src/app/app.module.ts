@@ -20,8 +20,14 @@ import { NewExperienciaComponent } from './components/exp/new-experiencia/new-ex
 import { EditExperienciaComponent } from './components/exp/edit-experiencia/edit-experiencia.component';
 import { NewEducacionComponent } from './components/exp/new-educacion/new-educacion.component';
 import { EditEducacionComponent } from './components/exp/edit-educacion/edit-educacion.component';
-import { EditSkillComponent } from './components/skills/edit-skill.component';
-import { NewSkillComponent } from './components/skills/new-skill.component';
+import { EditSkillComponent } from './components/skills/edit-skill/edit-skill.component';
+import { NewSkillComponent } from './components/skills/new-skill/new-skill.component';
+import { EditSoftComponent } from './components/skills/edit-soft/edit-soft.component';
+import { NewSoftComponent } from './components/skills/new-soft/new-soft.component';
+import { EditarComponent } from './components/info/editar/editar.component';
+
+
+
 
 @NgModule({
   declarations: [
@@ -42,6 +48,14 @@ import { NewSkillComponent } from './components/skills/new-skill.component';
     EditEducacionComponent,
     EditSkillComponent,
     NewSkillComponent,
+    EditSoftComponent,
+    NewSoftComponent,
+    EditarComponent,
+    
+   
+
+    
+    
   ],
   imports: [BrowserModule, AppRoutingModule, HttpClientModule, FormsModule],
   providers: [interceptorProvider],
