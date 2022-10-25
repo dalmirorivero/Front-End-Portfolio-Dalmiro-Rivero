@@ -1,23 +1,26 @@
 <div class="row">
   <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
-    <tbody *ngFor="let perfil of perfil">
+    <tbody *ngIf="perfil">
       <tr>
         <div>
-          <img src="../../../assets/FP.jpg" alt="Foto de perfil" class="img-fluid" id="pf" />
-        </div>
-        <div>
-          <h1>
+          <div>
+            <img src="{{ perfil.img }}" class= "img-fluid" id="pf">
+          </div>
+          <div></div>
+          <div>
+            <h1>
+              {{ perfil.perfil }}
+            </h1>
+            <h2>{{ perfil.descripcion }}</h2>
             <td *ngIf="isLogged">
               <button class="btn" routerLink="/editpr/{{ perfil.id }}">
-                <i class="bi bi-pen" style="color:#ffc107"></i>
+                <i class="bi bi-pen" style="color: #ffc107"></i>
               </button>
-            </td>{{ perfil.perfil}}
-          </h1>
-          <h2>{{perfil.descripcion}}</h2>
+            </td>
+          </div>
         </div>
       </tr>
     </tbody>
-
   </div>
   <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8 bio">
     <span>

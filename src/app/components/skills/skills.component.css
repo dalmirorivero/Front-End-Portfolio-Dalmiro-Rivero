@@ -107,14 +107,10 @@ p {
   margin-right: 1%;
 }
 
-#add{
-  
-  margin-left: 2%; 
-  
-  
+#add {
+  margin-left: 2%;
 }
-  
-   
-  
 
-
+button:hover {
+  border-color: transparent;
+}

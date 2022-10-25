@@ -25,6 +25,9 @@ import { NewSkillComponent } from './components/skills/new-skill/new-skill.compo
 import { EditSoftComponent } from './components/skills/edit-soft/edit-soft.component';
 import { NewSoftComponent } from './components/skills/new-soft/new-soft.component';
 import { EditarComponent } from './components/info/editar/editar.component';
+import { initializeApp,provideFirebaseApp } from '@angular/fire/app';
+import { environment } from '../environments/environment';
+import { provideStorage,getStorage } from '@angular/fire/storage';
 
 
 
@@ -57,7 +60,7 @@ import { EditarComponent } from './components/info/editar/editar.component';
     
     
   ],
-  imports: [BrowserModule, AppRoutingModule, HttpClientModule, FormsModule],
+  imports: [BrowserModule, AppRoutingModule, HttpClientModule, FormsModule, provideFirebaseApp(() => initializeApp(environment.firebase)), provideStorage(() => getStorage())],
   providers: [interceptorProvider],
   bootstrap: [AppComponent],
 })

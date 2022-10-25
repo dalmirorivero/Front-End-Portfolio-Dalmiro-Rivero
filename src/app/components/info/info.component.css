@@ -2,6 +2,7 @@
   border-radius: 100%;
   border: 10px double #cb6ce6;
   max-width: 80%;
+  margin-bottom: 5px;
 }
 
 div {
@@ -13,8 +14,10 @@ div {
 }
 
 h1 {
-  margin-top: 10px;
+  margin-top: 15px;
   font-family: "Stitch", "Staatliches";
+  display: inline;
+  text-align: center;
 }
 
 @font-face {
@@ -50,4 +53,60 @@ p {
 
 .bio {
   margin-top: 10%;
+}
+
+td {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  float: right;
+  margin-top: -100px;
+  margin-right: 60px;
+  position: relative;
+}
+
+button {
+  display: flex;
+
+  align-items: center;
+}
+
+button:hover {
+  border-color: transparent;
+}
+
+@media (max-width: 1300px) {
+  td {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    float: right;
+    margin-top: -100px;
+    margin-right: 20px;
+    position: relative;
+  }
+
+  button {
+    display: flex;
+
+    align-items: center;
+  }
+}
+
+@media (max-width: 768px) {
+  td {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 200px;
+    margin-top: -85px;
+
+    position: relative;
+  }
+
+  button {
+    display: flex;
+
+    align-items: center;
+  }
 }

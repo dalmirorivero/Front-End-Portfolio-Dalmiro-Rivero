@@ -12,15 +12,15 @@ import { TokenService } from 'src/app/service/token.service';
 })
 export class InfoComponent implements OnInit {
   persona: persona = new persona();
-  perfil: Perfil[] = [];
+  perfil: Perfil = null;
 
   constructor(
-    public personaService: PersonaService, 
+    public personaService: PersonaService,
     private perfilS: PerfilService,
     private tokenService: TokenService
-    ) {}
+  ) {}
 
-    isLogged = false;
+  isLogged = false;
 
   ngOnInit(): void {
     this.personaService.getPersona().subscribe((data) => {
@@ -28,18 +28,16 @@ export class InfoComponent implements OnInit {
     });
 
     this.cargarPerfil();
-    if(this.tokenService.getToken()){
+    if (this.tokenService.getToken()) {
       this.isLogged = true;
     } else {
       this.isLogged = false;
     }
   }
 
-  cargarPerfil(): void{
-    this.perfilS.lista().subscribe(
-      data => {
-        this.perfil = data;
-      }
-    )
+  cargarPerfil(): void {
+    this.perfilS.detail(1).subscribe((data) => {
+      this.perfil = data;
+    });
   }
 }
