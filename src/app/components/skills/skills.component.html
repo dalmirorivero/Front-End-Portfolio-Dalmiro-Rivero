@@ -6,23 +6,16 @@
     <tbody>
       <tr *ngFor="let Skill of skill">
         <div class="progress">
-          <div
-            class="progress-bar progress-bar-striped progress-bar-animated bg-warning"
-            role="progressbar"
-            [style.width]="Skill.porcentaje + '%'"
-          >
-            <span>{{ Skill.porcentaje + "%" }}</span>
+          <div class="progress-bar progress-bar-striped progress-bar-animated bg-warning" role="progressbar"
+            [style.width]="Skill.porcentaje + '%'">
+            <span>{{ Skill.descripcion }}</span>
           </div>
 
-          <p>{{ Skill.descripcion }}</p>
+          <p>{{ Skill.porcentaje + "%" }}</p>
         </div>
 
         <td *ngIf="isLogged">
-          <button
-            class="btn"
-            routerLink="/edithab/{{ Skill.id }}"
-            *ngIf="isLogged"
-          >
+          <button class="btn" routerLink="/edithab/{{ Skill.id }}" *ngIf="isLogged">
             <i class="bi bi-pen" style="color: #ffc107"></i>
           </button>
         </td>
@@ -33,15 +26,12 @@
           </button>
         </td>
       </tr>
-      <button
-        type="button"
-        class="btn btn-dark"
-        routerLink="/nuevahab"
-        *ngIf="isLogged"
-        id="add"
-      >
-        <i class="bi bi-plus-circle"></i> Nueva Habilidad
-      </button>
+      <hr class="my-4" style="color:beige" />
+      <div id="btn2">
+        <button type="button" class="btn btn-dark" routerLink="/nuevahab" *ngIf="isLogged" id="add">
+          <i class="bi bi-plus-circle"></i> Nueva Habilidad
+        </button>
+      </div>
     </tbody>
   </div>
 
@@ -50,15 +40,12 @@
     <tbody>
       <tr *ngFor="let Soft of soft">
         <div class="progress">
-          <div
-            class="progress-bar progress-bar-striped progress-bar-animated bg-warning"
-            role="progressbar"
-            [style.width]="Soft.sporcentaje + '%'"
-          >
-            <span>{{ Soft.sporcentaje + "%" }}</span>
+          <div class="progress-bar progress-bar-striped progress-bar-animated bg-warning" role="progressbar"
+            [style.width]="Soft.sporcentaje + '%'">
+            <span>{{ Soft.sdescripcion }}</span>
           </div>
 
-          <p>{{ Soft.sdescripcion }}</p>
+          <p>{{Soft.sporcentaje + "%"}}</p>
         </div>
 
         <td *ngIf="isLogged">
@@ -73,15 +60,14 @@
           </button>
         </td>
       </tr>
-      <button
-        type="button"
-        class="btn btn-dark"
-        routerLink="/nuevashab"
-        *ngIf="isLogged"
-        id="add"
-      >
-        <i class="bi bi-plus-circle"></i> Nueva Habilidad
-      </button>
+
+      <hr class="my-4" style="color:beige" />
+      <div id="btn">
+        <button type="button" class="btn btn-dark" routerLink="/nuevashab" *ngIf="isLogged" id="add">
+          <i class="bi bi-plus-circle"></i> Nueva Habilidad
+        </button>
+      </div>
+
     </tbody>
     <div id="add"></div>
   </div>

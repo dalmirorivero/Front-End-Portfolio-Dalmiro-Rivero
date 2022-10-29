@@ -48,6 +48,7 @@ export class ExpComponent implements OnInit {
     if (id != undefined) {
       this.sExperiencia.delete(id).subscribe(
         (data) => {
+         
           this.cargarExperiencia();
         },
         (err) => {

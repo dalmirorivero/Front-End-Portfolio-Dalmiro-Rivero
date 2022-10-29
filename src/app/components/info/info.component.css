@@ -3,6 +3,7 @@
   border: 10px double #cb6ce6;
   max-width: 80%;
   margin-bottom: 5px;
+  box-shadow: 0px 0px 20px 0px #cb6ce6;
 }
 
 div {
@@ -19,6 +20,8 @@ h1 {
   display: inline;
   text-align: center;
 }
+
+
 
 @font-face {
   font-family: "Stitch";
@@ -45,27 +48,31 @@ h2 {
 }
 
 p {
+  
+  
   font-weight: bolder;
   font-size: x-large;
   font-family: "WC Mano Negra Bta", sans-serif;
   color: #ffc107;
+  
 }
 
 .bio {
   margin-top: 10%;
+  
+  
+  
+  
 }
 
-td {
+  td { 
   display: flex;
   justify-content: center;
   align-items: center;
-  float: right;
-  margin-top: -100px;
-  margin-right: 60px;
-  position: relative;
-}
+  
+} 
 
-button {
+/* button {
   display: flex;
 
   align-items: center;
@@ -73,40 +80,36 @@ button {
 
 button:hover {
   border-color: transparent;
-}
+} */
+
+
 
 @media (max-width: 1300px) {
   td {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    float: right;
-    margin-top: -100px;
-    margin-right: 20px;
-    position: relative;
+  justify-content: center;
+  align-items: center;
+  
   }
 
-  button {
+  /* button {
     display: flex;
 
     align-items: center;
-  }
+   } */
 }
 
 @media (max-width: 768px) {
   td {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-right: 200px;
-    margin-top: -85px;
-
-    position: relative;
+  justify-content: center;
+  align-items: center;
+  
   }
 
-  button {
+ /* button {
     display: flex;
 
     align-items: center;
-  }
+  /* } */
 }

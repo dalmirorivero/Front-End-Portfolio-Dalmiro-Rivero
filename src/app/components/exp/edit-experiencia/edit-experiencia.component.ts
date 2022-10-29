@@ -24,7 +24,7 @@ export class EditExperienciaComponent implements OnInit {
         this.expLab = data;
       },
       (err) => {
-        alert('Error al editar');
+        alert('Error al modificar los datos 😡​');
         this.router.navigate(['']);
       }
     );
@@ -34,12 +34,15 @@ export class EditExperienciaComponent implements OnInit {
     const id = this.activatedRouter.snapshot.params['id'];
     this.sExperiencia.update(id, this.expLab).subscribe(
       (data) => {
+        alert("Experiencia modificada correctamente! 🎉​ ");
         this.router.navigate(['']);
       },
       (err) => {
-        alert('Error al editar');
+        alert('Error al modificar los datos 😡​');
         this.router.navigate(['']);
       }
     );
   }
+
+ 
 }

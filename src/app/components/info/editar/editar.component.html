@@ -1,44 +1,42 @@
-<div class="container" *ngIf="perfil">
-  <div class="row">
-    <div>
-      <form (ngSubmit)="onUpdate()" novalidate #f="ngForm">
-        <div class="form-group">
-          <label for="perfil">Ingrese nombre del perfil</label>
-          <input
-            type="text"
-            class="form-control"
-            id="perfil"
-            name="perfil"
-            [(ngModel)]="perfil.perfil"
-            required
-          />
+<app-redes></app-redes>
+<section class="vh-100" style="background-color: black">
+  <div class="container py-5 h-100">
+    <div class="row d-flex justify-content-center align-items-center h-100">
+      <div class="col-12 col-md-8 col-lg-6 col-xl-5">
+        <div class="card shadow-2-strong" style="border-radius: 1rem" *ngIf="perfil">
+          <div class="card-body p-5">
+            <h3 class="mb-5">EDITAR PERFIL</h3>
+
+            <form (ngSubmit)="onUpdate()" novalidate #f="ngForm">
+              <div class="form-group">
+                <label for="perfil">Nombre</label>
+                <input type="text" class="form-control" id="perfil" name="perfil" [(ngModel)]="perfil.perfil"
+                  required />
+              </div>
+              <br>
+
+              <div class="form-group">
+                <label for="descripcion">Descripcion</label>
+                <input type="text" class="form-control" id="descripcion" name="descripcion"
+                  [(ngModel)]="perfil.descripcion" required />
+              </div>
+              <br>
+              <div class="form-group">
+                <label for="img">Foto del perfil</label>
+                <input type="file" class="form-control" id="img" name="img" (change)="uploadImage($event)"
+                  accept=".jpg, .jpeg, .png" required />
+              </div>
+
+              <hr class="my-4" />
+              <div class="d-flex justify-content-center">
+                <button class="btn btn-warning">Actualizar</button>
+              </div>
+            </form>
+
+          </div>
         </div>
-        <div class="form-group">
-          <label for="descripcion">Ingrese la descripcion</label>
-          <input
-            type="text"
-            class="form-control"
-            id="descripcion"
-            name="descripcion"
-            [(ngModel)]="perfil.descripcion"
-            required
-          />
-        </div>
-        <div class="form-group">
-          <label for="img">Ingrese el archivo</label>
-          <input
-            type="file"
-            class="form-control"
-            id="img"
-            name="img"
-            (change)="uploadImage($event)"
-            accept=".jpg, .jpeg, .png"
-            required
-          />
-        </div>
-        <br />
-        <button class="btn btn-primary">Actualizar</button>
-      </form>
+      </div>
     </div>
   </div>
-</div>
+</section>
+<app-footer></app-footer>

@@ -24,7 +24,7 @@ export class EditSoftComponent implements OnInit {
       data => {
         this.soft = data;
       }, err => {
-        alert("Error al modificar");
+        alert('Error al modificar los datos 😡');
         this.router.navigate(['']);
       }
     )
@@ -34,9 +34,10 @@ export class EditSoftComponent implements OnInit {
     const id = this.activatedRouter.snapshot.params['id'];
     this.softS.update(id, this.soft).subscribe(
       data => {
+        alert("Skill modificada correctamente! 🎉​ ");
         this.router.navigate(['']);
       }, err => {
-        alert("Error al modificar la skill");
+        alert('Error al modificar los datos 😡');
         this.router.navigate(['']);
       }
     )

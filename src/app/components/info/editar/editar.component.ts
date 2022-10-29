@@ -37,10 +37,11 @@ export class EditarComponent implements OnInit {
     this.perfil.img = this.imageService.url
     this.perfilS.update(id, this.perfil).subscribe(
       (data) => {
+        alert("Usuario modificado correctamente! 🎉​ ");
         this.router.navigate(['']);
       },
       (err) => {
-        alert('Error al modificar la skill');
+        alert('Error al modificar los datos del usuario 😡​');
         this.router.navigate(['']);
       }
     );

@@ -1,9 +1,10 @@
 h3 {
   font-family: "WC Mano Negra Bta", sans-serif;
   font-weight: bolder;
-  font-size: 40px;
+  font-size: 50px;
   -webkit-text-stroke: 2px black;
   color: #ffc107;
+  margin: 20px;
 }
 
 h3:hover {
@@ -14,7 +15,7 @@ h3:hover {
 label {
   font-family: "Stitch", "Staatliches";
   font-size: 23px;
-  margin-top: 2%;
+  
 }
 
 button {
@@ -40,3 +41,9 @@ button:hover {
     width: 250px;
   }
 }
+
+.card{
+  border: 2px solid #ffc107;
+  box-shadow: 0px 0px 20px 0px #cb6ce6;
+}
+

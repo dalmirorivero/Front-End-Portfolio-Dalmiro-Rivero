@@ -2,11 +2,13 @@
   padding: 0px;
   width: 425px;
   margin: 10px;
+  
 }
 
 .progress-bar-animated {
   -webkit-animation: 1s linear infinite progress-bar-stripes;
   animation: 1s linear infinite progress-bar-stripes;
+  
 }
 
 @media (max-width: 768px) {
@@ -32,17 +34,26 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-top: 22px;
   }
+
+  #btn, #btn2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  
 }
 
-@media (max-width: 991px) {
+@media (max-width: 1220px) {
   .row {
     padding: 0px;
     margin: 0px;
   }
   .progress {
     padding: 0px;
-    width: 380px;
+    width: 300px;
     margin-top: 5px;
   }
 
@@ -51,11 +62,19 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-top: 22px;
   }
 
   #barrados {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 22px;
+  }
+
+  #btn, #btn2{
+    display: flex;
     justify-content: center;
     align-items: center;
   }
@@ -73,6 +92,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  
 }
 
 h1 {
@@ -92,9 +112,14 @@ h1:hover {
 }
 
 span {
+  
+  
   font-style: oblique;
-  color: black;
+  color: #3c3c3c;
   font-weight: bold;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 13px;
+ 
 }
 
 p {
@@ -114,3 +139,5 @@ p {
 button:hover {
   border-color: transparent;
 }
+
+

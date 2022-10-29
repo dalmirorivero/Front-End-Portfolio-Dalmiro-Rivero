@@ -44,12 +44,25 @@ li {
 p {
   font-style: oblique;
   color: #ffc107;
+  
+  line-height: 33px;
 }
 
 @media (max-width: 768px) {
   p {
     text-align: center;
+
+
+
   }
+
+  h2{
+    font-size: 20px;
+    text-align: center;
+    display: block;
+  }
+
+
   ol {
     text-align: center;
 
@@ -58,4 +71,32 @@ p {
   li {
     list-style-position: inside;
   }
+
+  #btn, #btn2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  h1{
+    margin-top: 22px;
+  }
+
+
+ 
+
+  
 }
+
+
+
+.table {
+  border-bottom-width: 0px;
+  margin-top: 20px;
+}
+
+td{
+  border-bottom-width: 0px ;
+  
+}
+

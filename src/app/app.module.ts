@@ -28,6 +28,9 @@ import { EditarComponent } from './components/info/editar/editar.component';
 import { initializeApp,provideFirebaseApp } from '@angular/fire/app';
 import { environment } from '../environments/environment';
 import { provideStorage,getStorage } from '@angular/fire/storage';
+import { ModalComponent } from './components/info/modal/modal.component';
+
+
 
 
 
@@ -54,6 +57,8 @@ import { provideStorage,getStorage } from '@angular/fire/storage';
     EditSoftComponent,
     NewSoftComponent,
     EditarComponent,
+    ModalComponent,
+    
     
    
 

@@ -13,27 +13,36 @@
           <td>
             <p>{{ Experiencia.descripcionE }}</p>
           </td>
+
           <td *ngIf="isLogged">
-            <button class="btn btn-outline-warning" routerLink="/editexp/{{ Experiencia.id }}">
-              <i class="bi bi-pen"></i>
+            <button class="btn" routerLink="/editexp/{{ Experiencia.id }}">
+              <i class="bi bi-pen" style="color: #ffc107"></i>
             </button>
           </td>
           <td *ngIf="isLogged">
-            <button class="btn btn-outline-danger" (click)="delete(Experiencia.id)">
-              <i class="bi bi-trash3"></i>
+            <button class="btn" (click)="delete(Experiencia.id)">
+              <i class="bi bi-trash3" style="color: #dc3545"></i>
             </button>
+
           </td>
+
         </tr>
+
+
       </tbody>
+
     </table>
-    <button type="button" class="btn btn-dark" routerLink="/nuevaexp" *ngIf="isLogged">
-      <i class="bi bi-plus-circle"></i>
-      Nueva Experiencia
-    </button>
+    <hr class="my-4" style="color:beige" />
+    <div id="btn2">
+      <button type="button" class="btn btn-dark" routerLink="/nuevaexp" *ngIf="isLogged">
+        <i class="bi bi-plus-circle"></i>
+        Nueva Experiencia
+      </button>
+    </div>
   </div>
 
   <div class="col-xs-12 col sm-12 col-md-5 col-lg-5">
-    <h1>EDUCACION</h1>
+    <h1>FORMACION</h1>
 
     <table class="table">
       <tbody>
@@ -45,22 +54,25 @@
             <p>{{ Educacion.descripcionE }}</p>
           </td>
           <td *ngIf="isLogged">
-            <button class="btn btn-outline-warning" routerLink="/editedu/{{ Educacion.id }}">
-              <i class="bi bi-pen"></i>
+            <button class="btn" routerLink="/editedu/{{ Educacion.id }}">
+              <i class="bi bi-pen" style="color: #ffc107"></i>
             </button>
           </td>
           <td *ngIf="isLogged">
-            <button class="btn btn-outline-danger" (click)="eliminar(Educacion.id)">
-              <i class="bi bi-trash3"></i>
+            <button class="btn" (click)="eliminar(Educacion.id)">
+              <i class="bi bi-trash3" style="color: #dc3545"></i>
             </button>
           </td>
         </tr>
       </tbody>
     </table>
-    <button type="button" class="btn btn-dark" routerLink="/nuevaformacion" *ngIf="isLogged">
-      <i class="bi bi-plus-circle"></i>
-      Agregar Formacion
-    </button>
+    <hr class="my-4" style="color:beige" />
+    <div id="btn">
+      <button type="button" class="btn btn-dark" routerLink="/nuevaformacion" *ngIf="isLogged">
+        <i class="bi bi-plus-circle"></i>
+        Nueva Formacion
+      </button>
+    </div>
     <div class="col-md-1 col-lg-1"></div>
   </div>
 </div>

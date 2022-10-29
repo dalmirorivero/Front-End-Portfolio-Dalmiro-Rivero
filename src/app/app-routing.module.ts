@@ -13,6 +13,7 @@ import { EditSoftComponent } from './components/skills/edit-soft/edit-soft.compo
 import { NewSkillComponent } from './components/skills/new-skill/new-skill.component';
 import { NewSoftComponent } from './components/skills/new-soft/new-soft.component';
 
+
 const routes: Routes = [
   { path: '', component: HomeComponent },
   { path: 'login', component: LoginComponent },
@@ -24,7 +25,8 @@ const routes: Routes = [
   { path: 'nuevahab', component: NewSkillComponent},
   { path: 'nuevashab', component: NewSoftComponent},
   { path: 'editshab/:id', component: EditSoftComponent},
-  { path: 'editpr/:id', component: EditarComponent}
+  { path: 'editpr/:id', component: EditarComponent},
+  
 
 ];
 

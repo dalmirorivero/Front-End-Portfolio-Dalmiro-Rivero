@@ -23,10 +23,10 @@ export class NewSkillComponent implements OnInit {
     const skill = new Skill(this.descripcion, this.porcentaje);
     this.skillS.save(skill).subscribe(
       data => {
-        alert("Skill creada correctamente");
+        alert("Habilidad añadida con exito! 🎉");
         this.router.navigate(['']);
       }, err =>{
-        alert("Fallo al añadir la skill");
+        alert("Error al añadir la habilidad 😡");
         this.router.navigate(['']);
       }
     )

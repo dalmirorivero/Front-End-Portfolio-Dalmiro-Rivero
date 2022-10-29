@@ -1,31 +1,31 @@
-<div class="container">
-  <div class="row">
-    <div>
-      <form (ngSubmit)="onCreate()" novalidate #f="ngForm">
-        <div class="form-group">
-          <label for="nombreE">Institucion</label>
-          <input
-            type="text"
-            class="form-control"
-            id="nombreE"
-            name="nombreE"
-            [(ngModel)]="nombreE"
-            required
-          />
+<app-redes></app-redes>
+<section class="vh-100" style="background-color: black">
+  <div class="container py-5 h-100">
+    <div class="row d-flex justify-content-center align-items-center h-100">
+      <div class="col-12 col-md-8 col-lg-6 col-xl-5">
+        <div class="card shadow-2-strong" style="border-radius: 1rem">
+          <div class="card-body p-5">
+            <h3 class="mb-5">NUEVA FORMACION</h3>
+            <form (ngSubmit)="onCreate()" novalidate #f="ngForm">
+              <div class="form-group">
+                <label for="nombreE">Institucion</label>
+                <input type="text" class="form-control" id="nombreE" name="nombreE" [(ngModel)]="nombreE" required />
+              </div>
+              <br>
+              <div class="form-group">
+                <label for="nombreE">Descripcion</label>
+                <input type="text" class="form-control" id="descripcionE" name="descripcionE" [(ngModel)]="descripcionE"
+                  required />
+              </div>
+              <hr class="my-4" />
+              <div class="d-flex justify-content-center">
+                <button class="btn btn-warning">Agregar </button>
+              </div>
+            </form>
+          </div>
         </div>
-        <div class="form-group">
-          <label for="nombreE">Descripcion</label>
-          <input
-            type="text"
-            class="form-control"
-            id="descripcionE"
-            name="descripcionE"
-            [(ngModel)]="descripcionE"
-            required
-          />
-        </div>
-        <button class="btn btn-outline-warning">Agregar educacion</button>
-      </form>
+      </div>
     </div>
   </div>
-</div>
+</section>
+<app-footer></app-footer>
