@@ -14,7 +14,10 @@ export class SkillsComponent implements OnInit {
   skill: Skill[] = [];
   soft: Soft[] = [];
 
-  constructor(private skillS: SkillService, private softS: SoftService ,private tokenService: TokenService) { }
+  constructor(
+    private skillS: SkillService, 
+    private softS: SoftService ,
+    private tokenService: TokenService) { }
   isLogged = false;
 
   ngOnInit(): void {

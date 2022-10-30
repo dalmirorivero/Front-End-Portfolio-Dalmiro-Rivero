@@ -29,6 +29,7 @@ import { initializeApp,provideFirebaseApp } from '@angular/fire/app';
 import { environment } from '../environments/environment';
 import { provideStorage,getStorage } from '@angular/fire/storage';
 import { ModalComponent } from './components/info/modal/modal.component';
+import { CarouselComponent } from './components/carousel/carousel.component';
 
 
 
@@ -58,6 +59,7 @@ import { ModalComponent } from './components/info/modal/modal.component';
     NewSoftComponent,
     EditarComponent,
     ModalComponent,
+    CarouselComponent,
     
     
    

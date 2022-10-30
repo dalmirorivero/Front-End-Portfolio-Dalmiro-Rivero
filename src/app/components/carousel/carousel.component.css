@@ -1,0 +1,24 @@
+.slider-img{
+    height: 80vh !important;
+}
+
+.container {
+    position:relative;
+    display: flex;
+    top: 0;
+    left: 0;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+}
+
+.carousel-inner{
+    border-radius: 25px;
+    border: 2px solid white;
+}
+
+@media (max-width: 768px) {
+    .slider-img{
+        height: 40vh !important;
+    }
+}

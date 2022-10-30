@@ -7,11 +7,11 @@
   width: auto;
 }
 
-.one,
+/* .one,
 .two {
   display: inline-block;
   text-align: justify;
-}
+} */
 
 #task {
   border: 10px solid #ffc107;

@@ -1,5 +1,8 @@
 import { Component, OnInit } from '@angular/core';
-import { SwitchService } from 'src/app/service/switch.service';
+import { ActivatedRoute, Router } from '@angular/router';
+import { persona } from 'src/app/model/persona.model';
+import { PersonaService } from 'src/app/service/persona.service';
+
 
 @Component({
   selector: 'app-modal',
@@ -8,13 +11,37 @@ import { SwitchService } from 'src/app/service/switch.service';
 })
 export class ModalComponent implements OnInit {
 
-  constructor(private modalSS: SwitchService) { }
+  persona: persona = null;
+
+  constructor(
+    private personaS: PersonaService,
+    private activatedRouter: ActivatedRoute,
+    private router: Router
+  ) { }
 
   ngOnInit(): void {
+    const id = this.activatedRouter.snapshot.params['id'];
+    this.personaS.detail(id).subscribe(
+      (data) => {
+        this.persona = data;
+      }, (err) => {
+        alert ('error');
+        this.router.navigate(['']);
+      }
+    )
   }
 
-  closeModal(){
-    this.modalSS.$modal.emit(false);
+  onUpdate(){
+    const id = this.activatedRouter.snapshot.params['id'];
+    this.personaS.update(id, this.persona).subscribe(
+      data => {
+        alert ("Bio modificada correctamente! 🎉");
+        this.router.navigate(['']);
+      }, err => {
+        alert ('Error al modificar la bio del usuario 😡');
+        this.router.navigate(['']);
+      }
+    )
   }
 
 

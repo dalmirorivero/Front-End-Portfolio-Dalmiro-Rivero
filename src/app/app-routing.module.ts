@@ -7,6 +7,7 @@ import { NewExperienciaComponent } from './components/exp/new-experiencia/new-ex
 import { HeaderComponent } from './components/header/header.component';
 import { HomeComponent } from './components/home/home.component';
 import { EditarComponent } from './components/info/editar/editar.component';
+import { ModalComponent } from './components/info/modal/modal.component';
 import { LoginComponent } from './components/login/login.component';
 import { EditSkillComponent } from './components/skills/edit-skill/edit-skill.component';
 import { EditSoftComponent } from './components/skills/edit-soft/edit-soft.component';
@@ -26,6 +27,7 @@ const routes: Routes = [
   { path: 'nuevashab', component: NewSoftComponent},
   { path: 'editshab/:id', component: EditSoftComponent},
   { path: 'editpr/:id', component: EditarComponent},
+  { path: 'editbio/:id', component: ModalComponent},
   
 
 ];

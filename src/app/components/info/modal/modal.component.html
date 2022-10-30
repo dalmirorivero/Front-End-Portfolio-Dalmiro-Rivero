@@ -1,18 +1,30 @@
-<div class="container">
-    <div class="modal">
-        <div class="col-xs-12 col-sm-12 col-md-4 col-lg-6">
+<app-redes></app-redes>
+<section class="vh-100" style="background-color: black">
+    <div class="container py-5 h-100">
+        <div class="row d-flex justify-content-center align-items-center h-100">
+            <div class="col-12 col-md-8 col-lg-6 col-xl-5">
+                <div class="card shadow-2-strong" style="border-radius: 1rem" *ngIf="persona">
+                    <div class="card-body p-5">
+                        <h3 class="mb-5">EDITAR BIO</h3>
+                        <form (ngSubmit)="onUpdate()" novalidate #f="ngForm">
+                            <div class="form-group form-group-lg">
+                                <label for="bio">Nueva descripcion</label>
+                                <input type="text" class="form-control" id="bio" name="bio"
+                                    [(ngModel)]="persona.bio" required>
+                            </div>
+                            
+                            <hr class="my-4" />
+                            <div class="d-flex justify-content-center">
+                                <button class="btn btn-warning">
+                                    Actualizar
+                                </button>
+                            </div>
+                        </form>
 
-        </div>
-
-        <div class="modal col-xs-12 col-sm-12 col-md-8 col-lg-6">
-            <div class="modal-content">
-                <div class="modal-body">
-                    <h3>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veniam incidunt quos quis. Ipsa
-                        repellendus laboriosam labore, odio cupiditate modi repudiandae, officia, optio culpa reiciendis
-                        ullam perferendis quis maxime ipsam aspernatur.</h3>
-                    <button (click)="closeModal()">X</button>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-</div>
+</section>
+<app-footer></app-footer>

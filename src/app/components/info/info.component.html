@@ -36,13 +36,11 @@
     </span>
 
 
-
-    <button (click)="openModal()" type="button" class="btn btn-dark">
+    <td *ngIf="isLogged">
+    <button  type="button" class="btn btn-dark" routerLink="/editbio/{{ persona.id }}" *ngIf="isLogged">
       <i class="bi bi-pen" style="font-size: 15px; color: #ffc107;"></i> Editar informacion
     </button>
-    <div *ngIf="modalSwitch == true">
-      <app-modal></app-modal>
-    </div>
+    </td>
   </div>
 
 

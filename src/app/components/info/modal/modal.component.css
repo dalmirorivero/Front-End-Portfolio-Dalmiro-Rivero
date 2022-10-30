@@ -1,16 +1,54 @@
-.modal {
-    position: fixed;
-    display:block;
-    top: 50%;
-    left: 25%;
+h3 {
+    font-family: "WC Mano Negra Bta", sans-serif;
+    font-weight: bolder;
+    font-size: 50px;
+    -webkit-text-stroke: 2px black;
+    color: #ffc107;
+    text-align: center;
+    margin: 20px;
+  }
+  
+  h3:hover {
+    -webkit-text-stroke: 2px black;
+    color: #cb6ce6;
+  }
+
+  button {
+    font-family: "Stitch", "Staatliches";
+    font-size: 23px;
+    border: 1px solid black;
+    width: 350px;
     
-
-}
-
-.modal-content {
-    padding: 50px;
-    max-width: 50%;
-   
     
-}
+    justify-content: center;
+  }
+  
+  button:hover {
+    background-color: #cb6ce6;
+    border: 1px solid black;
+  }
 
+  label {
+    font-family: "Stitch", "Staatliches";
+    font-size: 23px;
+    
+  }
+
+  @media (max-width: 768px) {
+    button {
+      width: 250px;
+    }
+  }
+  
+  @media (max-width: 525px) {
+    button {
+      width: 250px;
+    }
+  }
+
+  .card{
+    border: 2px solid #ffc107;
+    box-shadow: 0px 0px 20px 0px #cb6ce6;
+  }
+  
+  
