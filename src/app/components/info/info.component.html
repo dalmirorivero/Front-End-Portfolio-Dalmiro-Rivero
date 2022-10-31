@@ -5,8 +5,8 @@
       <tr>
         <div>
           <div>
-            <!-- <img src="{{ perfil.img }}" class= "img-fluid" id="pf"> -->
-            <img src="../../../assets/FP.jpg" class="img-fluid" id="pf">
+            <img src="{{ perfil.img }}" class="img-fluid" id="pf">
+            <!-- <img src="../../../assets/FP.jpg" class="img-fluid" id="pf"> -->
           </div>
           <div></div>
           <div>
@@ -37,9 +37,9 @@
 
 
     <td *ngIf="isLogged">
-    <button  type="button" class="btn btn-dark" routerLink="/editbio/{{ persona.id }}" *ngIf="isLogged">
-      <i class="bi bi-pen" style="font-size: 15px; color: #ffc107;"></i> Editar informacion
-    </button>
+      <button type="button" class="btn btn-dark" routerLink="/editbio/{{ persona.id }}" *ngIf="isLogged">
+        <i class="bi bi-pen" style="font-size: 15px; color: #ffc107;"></i> Editar informacion
+      </button>
     </td>
   </div>
 

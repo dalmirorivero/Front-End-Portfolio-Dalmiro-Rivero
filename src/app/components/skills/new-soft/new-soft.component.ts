@@ -22,10 +22,10 @@ export class NewSoftComponent implements OnInit {
     const soft = new Soft(this.sdescripcion, this.sporcentaje);
     this.softS.save(soft).subscribe(
       data => {
-        alert("Skill creada correctamente");
+        alert("Habilidad añadida con exito! 🎉");
         this.router.navigate(['']);
       }, err =>{
-        alert("Fallo al añadir la skill");
+        alert("Error al añadir la habilidad 😡");
         this.router.navigate(['']);
       }
     )

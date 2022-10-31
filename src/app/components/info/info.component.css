@@ -3,7 +3,7 @@
   border: 10px double #cb6ce6;
   max-width: 80%;
   margin-bottom: 5px;
-  box-shadow: 0px 0px 20px 0px #cb6ce6;
+  box-shadow: 0px 0px 15px 0px #cb6ce6;
 }
 
 div {
@@ -36,7 +36,7 @@ h1 {
 }
 
 h2 {
-  margin-top: -10px;
+  margin-top: -5px;
   font-style: oblique;
   font-weight: lighter;
   font-size: larger;
