@@ -1,4 +1,4 @@
-# Personal Portfolio Website
+# PERSONAL PORTFOLIO WEBSITE
 
 This project is my personal portfolio website that allows to dynamically add, remove, or modify the information on it. The front end of the website is built using HTML, CSS, and TypeScript, with the Bootstrap 5 library and Angular framework. The website is hosted on Firebase and runs on NodeJS. The mockup for the website was designed using Figma.
 
