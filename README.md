@@ -1,27 +1,47 @@
-# PortfolioDalmiroRivero
+# Personal Portfolio Website
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.0.0.
+This project is my personal portfolio website that allows to dynamically add, remove, or modify the information on it. The front end of the website is built using HTML, CSS, and TypeScript, with the Bootstrap 5 library and Angular framework. The website is hosted on Firebase and runs on NodeJS. The mockup for the website was designed using Figma.
 
-## Development server
+The back end of the website is built using Java and the Spring Boot framework. The application server is Tomcat and the website is hosted on Render. The database is MySQL and is hosted on Clever Cloud. Testing is done using XAMPP and Postman. 
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+The IDE's used for develop this project was Visual Studio Code and Apache NetBeans.
 
-## Code scaffolding
+The website features a login system with JPA security and is fully responsive, making it accessible on a variety of devices. 
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+Overall, this project provides a simple and intuitive way to create and manage the website. With its user-friendly interface and dynamic data capabilities, it is a great tool  to showcase works and attract new clients or job opportunities.
 
-## Build
+## FRONT END
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+### Languages: HTML, CSS, TypeScript
+### Libraries: Bootstrap 5
+### Framework: Angular 14
+### Hosting: Firebase
+### Runtime: NodeJS
+### Mockup: Figma
 
-## Running unit tests
+## BACK END
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+### Language: Java
+### Framework: Spring Boot
+### Server: Tomcat
+### Hosting: Render
 
-## Running end-to-end tests
+## DATABASE
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+### Language: MySQL
+### Hosting: Clever Cloud
+### Testing: XAMPP - Postman
 
-## Further help
+## IDE
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+### VSC
+### Apache NB
+
+## SHOWCASE
+
+- https://frontendportfolio-e6cc4.web.app
+- https://dalmirorivero.com.ar/
+
+### *This project was fully developed by Dalmiro Rivero for the final delivery of the second stage of the Argentina Programa "#YoProgramo" course, second edition, 2022.*
+
+
