@@ -10,5 +10,5 @@ export const environment = {
     
   },
   production: true,
-  URL: 'https://bckport.herokuapp.com/'
+  URL: 'https://backend-portfolioap-li1e.onrender.com/'
 };
