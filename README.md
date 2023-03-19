@@ -12,7 +12,7 @@ Overall, this project provides a simple and intuitive way to create and manage t
 
 ## FRONT END
 
-### Languages: HTML, CSS, TypeScript
+### Languages: > HTML, CSS, TypeScript
 ### Libraries: Bootstrap 5
 ### Framework: Angular 14
 ### Hosting: Firebase
