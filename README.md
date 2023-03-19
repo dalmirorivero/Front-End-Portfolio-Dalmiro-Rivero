@@ -10,34 +10,29 @@ The website features a login system with JPA security and is fully responsive, m
 
 Overall, this project provides a simple and intuitive way to create and manage the website. With its user-friendly interface and dynamic data capabilities, it is a great tool  to showcase works and attract new clients or job opportunities.
 
-## FRONT END
+## 🐊FRONT END
 
-### Languages: > HTML, CSS, TypeScript
-### Libraries: Bootstrap 5
-### Framework: Angular 14
-### Hosting: Firebase
-### Runtime: NodeJS
-### Mockup: Figma
+**Languages:** _HTML, CSS, TypeScript_
+**Libraries:** _Bootstrap 5_
+**Framework:** _Angular 14_
+**Hosting:** _Firebase_
+**Runtime:** _NodeJS_
+**Mockup:**_ Figma_
 
-## BACK END
+## 🐊BACK END
 
-### Language: Java
-### Framework: Spring Boot
-### Server: Tomcat
-### Hosting: Render
+ **Language:** _Java_
+ **Framework:** _Spring Boot_
+ **Server:** _Tomcat_
+ **Hosting**: _Render_
 
-## DATABASE
+## 🐊DATABASE
 
-### Language: MySQL
-### Hosting: Clever Cloud
-### Testing: XAMPP - Postman
-
-## IDE
-
-### VSC
-### Apache NB
-
-## SHOWCASE
+ **Language:** _MySQL_
+ **Hosting:** _Clever Cloud_
+ **Testing:** _XAMPP - Postman_
+ 
+## 🐊SHOWCASE
 
 - https://frontendportfolio-e6cc4.web.app
 - https://dalmirorivero.com.ar/
