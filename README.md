@@ -12,31 +12,31 @@ Overall, this project provides a simple and intuitive way to create and manage t
 
 ## 🐊FRONT END
 
-**Languages:** _HTML, CSS, TypeScript_
-**Libraries:** _Bootstrap 5_
-**Framework:** _Angular 14_
-**Hosting:** _Firebase_
-**Runtime:** _NodeJS_
-**Mockup:**_ Figma_
+- **Languages:** _HTML, CSS, TypeScript_
+- **Libraries:** _Bootstrap 5_
+- **Framework:** _Angular 14_
+- **Hosting:** _Firebase_
+- **Runtime:** _NodeJS_
+- **Mockup:**_ Figma_
 
 ## 🐊BACK END
 
- **Language:** _Java_
- **Framework:** _Spring Boot_
- **Server:** _Tomcat_
- **Hosting**: _Render_
+ - **Language:** _Java_
+ - **Framework:** _Spring Boot_
+ - **Server:** _Tomcat_
+ - **Hosting**: _Render_
 
 ## 🐊DATABASE
 
- **Language:** _MySQL_
- **Hosting:** _Clever Cloud_
- **Testing:** _XAMPP - Postman_
+ - **Language:** _MySQL_
+ - **Hosting:** _Clever Cloud_
+ - **Testing:** _XAMPP - Postman_
  
 ## 🐊SHOWCASE
 
 - https://frontendportfolio-e6cc4.web.app
 - https://dalmirorivero.com.ar/
 
-### *This project was fully developed by Dalmiro Rivero for the final delivery of the second stage of the Argentina Programa "#YoProgramo" course, second edition, 2022.*
+***This project was fully developed by Dalmiro Rivero for the final delivery of the second stage of the Argentina Programa "#YoProgramo" course, second edition, 2022.***
 
 
